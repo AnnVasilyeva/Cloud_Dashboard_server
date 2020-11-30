@@ -1,0 +1,38 @@
+{
+  "name": "cloud_dashboard_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnVasilyeva/Cloud_Dashboard_server.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "AnnV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnVasilyeva/Cloud_Dashboard_server/issues"
+  },
+  "homepage": "https://github.com/AnnVasilyeva/Cloud_Dashboard_server#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "forever": "^3.0.4",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^8.3.1",
+    "ws": "^7.4.0"
+  },
+  "engines": {
+    "node": "11.x"
+  }
+}
